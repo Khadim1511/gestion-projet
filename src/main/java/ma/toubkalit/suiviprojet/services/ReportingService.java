@@ -16,11 +16,19 @@ public class ReportingService {
     private final PhaseRepository phaseRepo;
     private final ProjetRepository projetRepo;
     private final PhaseService phaseService;
+    private final OrganismeRepository organismeRepo;
+    private final EmployeRepository employeRepo;
 
-    public ReportingService(PhaseRepository phaseRepo, ProjetRepository projetRepo, PhaseService phaseService) {
+    public ReportingService(PhaseRepository phaseRepo,
+                            ProjetRepository projetRepo,
+                            PhaseService phaseService,
+                            OrganismeRepository organismeRepo,
+                            EmployeRepository employeRepo) {
         this.phaseRepo = phaseRepo;
         this.projetRepo = projetRepo;
         this.phaseService = phaseService;
+        this.organismeRepo = organismeRepo;
+        this.employeRepo = employeRepo;
     }
 
     public List<PhaseResponse> getPhasesTermineesNonFacturees() {
@@ -45,14 +53,24 @@ public class ReportingService {
 
     public TableauDeBordResponse getTableauDeBord() {
         TableauDeBordResponse tb = new TableauDeBordResponse();
-        tb.setTotalProjets(projetRepo.count());
-        tb.setProjetsEnCours(projetRepo.findProjetsEnCours().size());
-        tb.setProjetsClotures(projetRepo.findProjetsClotures().size());
-        tb.setTotalPhases(phaseRepo.count());
+        
+        // Frontend expected fields (counts)
+        tb.setCountProjets(projetRepo.count());
+        tb.setCountProjetsEnCours(projetRepo.findProjetsEnCours().size());
+        tb.setCountProjetsClotures(projetRepo.findProjetsClotures().size());
+        tb.setCountPhases(phaseRepo.count());
+        tb.setCountOrganismes(organismeRepo.count());
+        tb.setCountEmployes(employeRepo.count());
+        
+        Double totalMontant = projetRepo.sumTotalMontant();
+        tb.setTotalMontant(totalMontant != null ? totalMontant : 0.0);
+
+        // Individual phase states
         tb.setPhasesTerminees(phaseRepo.findByEtatRealisationTrue().size());
         tb.setPhasesNonFacturees(phaseRepo.findByEtatRealisationTrueAndEtatFacturationFalse().size());
         tb.setPhasesFactureesNonPayees(phaseRepo.findByEtatFacturationTrueAndEtatPaiementFalse().size());
         tb.setPhasesPayees(phaseRepo.findByEtatPaiementTrue().size());
+        
         return tb;
     }
 }

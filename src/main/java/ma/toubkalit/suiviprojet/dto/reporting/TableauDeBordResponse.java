@@ -1,22 +1,51 @@
 package ma.toubkalit.suiviprojet.dto.reporting;
 
 public class TableauDeBordResponse {
-    private long totalProjets;
-    private long projetsEnCours;
-    private long projetsClotures;
-    private long totalPhases;
+    private long countProjets;
+    private long countProjetsEnCours;
+    private long countProjetsClotures;
+    private long countPhases;
+    private long countOrganismes;
+    private long countEmployes;
+    private double totalMontant;
+
     private long phasesTerminees;
     private long phasesNonFacturees;
     private long phasesFactureesNonPayees;
     private long phasesPayees;
 
     public TableauDeBordResponse() {}
-    public long getTotalProjets() { return totalProjets; }           public void setTotalProjets(long v) { this.totalProjets = v; }
-    public long getProjetsEnCours() { return projetsEnCours; }       public void setProjetsEnCours(long v) { this.projetsEnCours = v; }
-    public long getProjetsClotures() { return projetsClotures; }     public void setProjetsClotures(long v) { this.projetsClotures = v; }
-    public long getTotalPhases() { return totalPhases; }             public void setTotalPhases(long v) { this.totalPhases = v; }
-    public long getPhasesTerminees() { return phasesTerminees; }     public void setPhasesTerminees(long v) { this.phasesTerminees = v; }
-    public long getPhasesNonFacturees() { return phasesNonFacturees; } public void setPhasesNonFacturees(long v) { this.phasesNonFacturees = v; }
-    public long getPhasesFactureesNonPayees() { return phasesFactureesNonPayees; } public void setPhasesFactureesNonPayees(long v) { this.phasesFactureesNonPayees = v; }
-    public long getPhasesPayees() { return phasesPayees; }           public void setPhasesPayees(long v) { this.phasesPayees = v; }
+
+    public long getCountProjets() { return countProjets; }
+    public void setCountProjets(long countProjets) { this.countProjets = countProjets; }
+
+    public long getCountProjetsEnCours() { return countProjetsEnCours; }
+    public void setCountProjetsEnCours(long countProjetsEnCours) { this.countProjetsEnCours = countProjetsEnCours; }
+
+    public long getCountProjetsClotures() { return countProjetsClotures; }
+    public void setCountProjetsClotures(long countProjetsClotures) { this.countProjetsClotures = countProjetsClotures; }
+
+    public long getCountPhases() { return countPhases; }
+    public void setCountPhases(long countPhases) { this.countPhases = countPhases; }
+
+    public long getCountOrganismes() { return countOrganismes; }
+    public void setCountOrganismes(long countOrganismes) { this.countOrganismes = countOrganismes; }
+
+    public long getCountEmployes() { return countEmployes; }
+    public void setCountEmployes(long countEmployes) { this.countEmployes = countEmployes; }
+
+    public double getTotalMontant() { return totalMontant; }
+    public void setTotalMontant(double totalMontant) { this.totalMontant = totalMontant; }
+
+    public long getPhasesTerminees() { return phasesTerminees; }
+    public void setPhasesTerminees(long phasesTerminees) { this.phasesTerminees = phasesTerminees; }
+
+    public long getPhasesNonFacturees() { return phasesNonFacturees; }
+    public void setPhasesNonFacturees(long phasesNonFacturees) { this.phasesNonFacturees = phasesNonFacturees; }
+
+    public long getPhasesFactureesNonPayees() { return phasesFactureesNonPayees; }
+    public void setPhasesFactureesNonPayees(long phasesFactureesNonPayees) { this.phasesFactureesNonPayees = phasesFactureesNonPayees; }
+
+    public long getPhasesPayees() { return phasesPayees; }
+    public void setPhasesPayees(long phasesPayees) { this.phasesPayees = phasesPayees; }
 }

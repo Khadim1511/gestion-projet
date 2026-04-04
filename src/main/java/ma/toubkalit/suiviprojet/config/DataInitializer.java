@@ -16,16 +16,16 @@ public class DataInitializer {
 
     @Bean
     CommandLineRunner initData(ProfilRepository profilRepo,
-                                EmployeRepository employeRepo,
-                                PasswordEncoder encoder) {
+            EmployeRepository employeRepo,
+            PasswordEncoder encoder) {
         return args -> {
             String[][] profils = {
-                {"ADMIN",  "Administrateur"},
-                {"DIR",    "Directeur"},
-                {"CP",     "Chef de projet"},
-                {"SEC",    "Secrétaire"},
-                {"COMPTA", "Comptable"},
-                {"EMP",    "Employé"}
+                    { "ADMIN", "Administrateur" },
+                    { "DIR", "Directeur" },
+                    { "CP", "Chef de projet" },
+                    { "SEC", "Secrétaire" },
+                    { "COMPTA", "Comptable" },
+                    { "EMP", "Employé" }
             };
 
             for (String[] p : profils) {
@@ -38,6 +38,12 @@ public class DataInitializer {
                 }
             }
 
+            employeRepo.findByLogin("admin").ifPresent(admin -> {
+                admin.setEmail("khadimseye2004@gmail.com");
+                employeRepo.save(admin);
+                log.info("Email de l'admin mis à jour : {}", admin.getEmail());
+            });
+
             if (employeRepo.findByLogin("admin").isEmpty()) {
                 Profil adminProfil = profilRepo.findByCode("ADMIN").orElseThrow();
                 Employe admin = new Employe();
@@ -45,7 +51,7 @@ public class DataInitializer {
                 admin.setNom("Admin");
                 admin.setPrenom("Système");
                 admin.setLogin("admin");
-                admin.setEmail("admin@toubkalit.ma");
+                admin.setEmail("khadimseye2004@gmail.com");
                 admin.setPassword(encoder.encode("admin123"));
                 admin.setProfil(adminProfil);
                 employeRepo.save(admin);

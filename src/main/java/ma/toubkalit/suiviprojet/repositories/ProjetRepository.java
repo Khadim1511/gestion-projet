@@ -20,4 +20,7 @@ public interface ProjetRepository extends JpaRepository<Projet, Integer> {
 
     @Query("SELECT p FROM Projet p WHERE p.dateFin < CURRENT_DATE")
     List<Projet> findProjetsClotures();
+
+    @Query("SELECT SUM(p.montant) FROM Projet p")
+    Double sumTotalMontant();
 }
