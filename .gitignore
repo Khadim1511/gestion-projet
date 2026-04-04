@@ -8,4 +8,5 @@ build/
 node_modules/
 .DS_Store
 uploads/
+README.md
 assets/demo.mp4
