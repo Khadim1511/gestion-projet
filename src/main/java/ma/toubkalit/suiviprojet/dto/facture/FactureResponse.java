@@ -17,4 +17,6 @@ public class FactureResponse {
     public Integer getPhaseId() { return phaseId; }     public void setPhaseId(Integer p) { this.phaseId = p; }
     public String getPhaseLibelle() { return phaseLibelle; } public void setPhaseLibelle(String p) { this.phaseLibelle = p; }
     public Double getMontant() { return montant; }      public void setMontant(Double m) { this.montant = m; }
+    public String getChemin() { return chemin; }        public void setChemin(String c) { this.chemin = c; }
+    private String chemin;
 }

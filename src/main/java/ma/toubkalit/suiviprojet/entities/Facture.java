@@ -21,6 +21,9 @@ public class Facture {
     @JoinColumn(name = "phase_id", nullable = false, unique = true)
     private Phase phase;
 
+    @Column(length = 500)
+    private String chemin;
+
     public Facture() {}
 
     public Integer getId() { return id; }
@@ -34,4 +37,7 @@ public class Facture {
 
     public Phase getPhase() { return phase; }
     public void setPhase(Phase phase) { this.phase = phase; }
+
+    public String getChemin() { return chemin; }
+    public void setChemin(String chemin) { this.chemin = chemin; }
 }
