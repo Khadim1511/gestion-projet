@@ -61,6 +61,9 @@
 - **Animations** : Framer Motion
 - **Networking** : Axios (Intercepteurs JWT)
 
+  <img width="2528" height="1684" alt="Gemini_Generated_Image_sd31ivsd31ivsd31" src="https://github.com/user-attachments/assets/5deff7a0-325a-4701-9c7e-ab8071ac011f" />
+
+
 ---
 
 ## Démonstration Vidéo
