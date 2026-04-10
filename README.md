@@ -1,3 +1,7 @@
+
+
+
+
 # SuiviProjet 
   ### Système de Pilotage et Suivi Opérationnel de Projets
   
@@ -66,7 +70,8 @@
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
 
-https://github.com/user-attachments/assets/c505fbdc-1440-48f1-a535-c0807aa43865
+https://github.com/user-attachments/assets/764dd53b-85c7-44e5-a6ff-9278a34a56f0
+
 
 
 ---
