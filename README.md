@@ -72,6 +72,7 @@
 > **Démonstration Vidéo Professionnelle.**  
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
+![](./demo_video.mp4)
 
 ---
 
