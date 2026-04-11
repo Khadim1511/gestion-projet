@@ -73,7 +73,7 @@
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
 
-<video src="https://i.imgur.com/ATALFqT.mp4" controls width="100%"></video>
+<video src="https://imgur.com/a/ATALFqT" controls width="100%"></video>
 
 
 ## Installation & Déploiement
