@@ -72,13 +72,9 @@
 > **Démonstration Vidéo Professionnelle.**  
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
-<div align="center">
-  <p><b>📺 Cliquez sur l'image ci-dessous pour lancer la démonstration vidéo sur YouTube</b></p>
-  
-  [![Démonstration SuiviProjet](./assets/video_thumb.png)](https://youtu.be/-rqxD-6Ephg)
-  
-  <p><i>(La vidéo s'ouvrira sur YouTube pour une qualité optimale)</i></p>
-</div>
+
+https://github.com/user-attachments/assets/ff2ce442-3787-4764-9f09-24bb1e970760
+
 
 ## Installation & Déploiement
 
