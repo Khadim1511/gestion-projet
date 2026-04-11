@@ -75,7 +75,7 @@
 <div align="center">
   <p><b>📺 Cliquez sur l'image ci-dessous pour lancer la démonstration vidéo sur YouTube</b></p>
   
-  [![Démonstration SuiviProjet](./assets/video_preview.png)](https://youtu.be/-rqxD-6Ephg)
+  [![Démonstration SuiviProjet](./assets/video_thumb.png)](https://youtu.be/-rqxD-6Ephg)
   
   <p><i>(La vidéo s'ouvrira sur YouTube pour une qualité optimale)</i></p>
 </div>
