@@ -73,7 +73,7 @@
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
 
-<video src="https://imgur.com/a/ATALFqT" controls width="100%"></video>
+[![Démonstration de SuiviProjet](https://img.youtube.com/vi/-rqxD-6Ephg/maxresdefault.jpg)](https://youtu.be/-rqxD-6Ephg)
 
 
 ## Installation & Déploiement
