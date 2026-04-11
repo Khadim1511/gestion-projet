@@ -73,14 +73,6 @@
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
 
-<div align="center">
-  <h3>🎥 Démonstration Vidéo (Version Locale)</h3>
-  
-  ![](./demo_video.mp4)
-  
-  <br/>
-  <p><i>Si le lecteur ne s'affiche pas, vous pouvez voir la vidéo directement en cliquant sur le fichier <b>demo_video.mp4</b> à la racine du dépôt.</i></p>
-</div>
 ---
 
 ## Installation & Déploiement
