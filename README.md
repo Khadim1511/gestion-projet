@@ -73,9 +73,7 @@
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
 
-https://github.com/user-attachments/assets/764dd53b-85c7-44e5-a6ff-9278a34a56f0
-
-<video src="./demo_video.mp4" controls width="100%"></video>
+<video src="demo_video.mp4" controls width="100%"></video>
 
 
 
