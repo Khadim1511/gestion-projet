@@ -72,9 +72,11 @@
 > **Démonstration Vidéo Professionnelle.**  
 > Découvrez le fonctionnement en temps réel du dashboard, de la gestion des phases et de la facturation PDF automatisée.
 
-![](./demo_video.mp4)
 
----
+https://github.com/Khadim1511/gestion-projet/raw/main/demo_video.mp4
+
+<video src="https://github.com/Khadim1511/gestion-projet/raw/main/demo_video.mp4" width="100%" controls></video>
+
 
 ## Installation & Déploiement
 
