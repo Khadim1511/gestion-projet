@@ -112,6 +112,13 @@ docker-compose up --build
 
 ---
 
+## Base de donnees
+
+
+![IMG_1953](https://github.com/user-attachments/assets/ce19c8ec-8722-4670-baba-02a9bdb14144)
+
+
+
 ## Identifiants de Test (Défaut)
 > [!NOTE]
 > Au premier lancement, la base de données est initialisée avec ces comptes :
